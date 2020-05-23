@@ -1,0 +1,29 @@
+{
+    "name": "CtrlYouTubeMP3",
+    "version": "1.0",
+    "description": "You must enter a shortcut in Chrome Extensiton settings. You must! On a YouTube video, click Alt+Comma+D to automatically download and save the MP3",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "storage",
+        "https://www.vibeattack.com/*",
+        "http://www.vibeattack.com/*",
+        "downloads"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["jquery.min.js", "background.js"],
+        "persistent": false
+    },
+    "commands":{
+        "download-mp3":{
+            "suggested_key":{
+                "default": "Alt+Shift+A",
+                "mac": "Command+Shift+A"
+            },
+            "description": "Downloads an MP3 of the current YouTube video."
+        }
+    }
+}
