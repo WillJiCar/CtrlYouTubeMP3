@@ -11,7 +11,8 @@
         "downloads"
     ],
     "browser_action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": "/icons/MAIN_UNAVAILABLE_32.png"
     },
     "background": {
         "scripts": ["jquery.min.js", "background.js"],
@@ -25,5 +26,8 @@
             },
             "description": "Downloads an MP3 of the current YouTube video."
         }
+    },
+    "icons":{
+        "128": "/icons/MAIN_AVAILABLE_128x128.png"
     }
 }
